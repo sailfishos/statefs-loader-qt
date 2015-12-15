@@ -4,7 +4,7 @@ Summary: Statefs loader to load providers using Qt5
 Name: statefs-loader-qt5
 Version: x.x.x
 Release: 1
-License: LGPLv2
+License: LGPLv2.1+
 Group: System Environment/Libraries
 URL: http://github.com/nemomobile/statefs-loader-qt
 Source0: %{name}-%{version}.tar.bz2
@@ -28,9 +28,6 @@ make %{?jobs:-j%jobs}
 rm -rf %{buildroot}
 make install DESTDIR=%{buildroot}
 %statefs_loader_install qt5 %{_statefs_libdir}/libloader-qt5.so
-
-%clean
-rm -rf %{buildroot}
 
 %files -f qt5.files
 %defattr(-,root,root,-)
