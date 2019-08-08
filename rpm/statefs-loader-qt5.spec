@@ -1,12 +1,12 @@
 %define statefs_ver 0.3.24
 
 Summary: Statefs loader to load providers using Qt5
-Name: statefs-loader-qt5
+Name:    statefs-loader-qt5
 Version: x.x.x
 Release: 1
-License: LGPLv2.1+
-Group: System Environment/Libraries
-URL: http://github.com/nemomobile/statefs-loader-qt
+License: LGPLv2+
+Group:   System Environment/Libraries
+URL:     https://git.sailfishos.org/mer-core/statefs-loader-qt
 Source0: %{name}-%{version}.tar.bz2
 BuildRequires: cmake >= 2.8
 BuildRequires: pkgconfig(Qt5Core)
