@@ -13,6 +13,7 @@ BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: pkgconfig(statefs) >= %{statefs_ver}
 BuildRequires: pkgconfig(cor) >= 0.1.4
 Requires: statefs >= %{statefs_ver}
+ExcludeArch:   aarch64
 
 %description
 %{summary}
